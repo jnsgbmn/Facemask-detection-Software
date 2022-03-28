@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1680</width>
-    <height>924</height>
+    <width>1310</width>
+    <height>703</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,8 +17,8 @@
    <widget class="QFrame" name="dropscreen">
     <property name="geometry">
      <rect>
-      <x>490</x>
-      <y>220</y>
+      <x>320</x>
+      <y>170</y>
       <width>721</width>
       <height>391</height>
      </rect>
@@ -97,7 +97,7 @@ QProgressBar::chunk{
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>80</x>
+       <x>90</x>
        <y>80</y>
        <width>611</width>
        <height>251</height>
@@ -107,7 +107,7 @@ QProgressBar::chunk{
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../Downloads/IMG_6041-removebg.png</pixmap>
+      <pixmap>images/IMG_6041-removebg.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
