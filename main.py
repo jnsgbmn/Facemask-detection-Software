@@ -125,8 +125,10 @@ class MainWindow(QMainWindow, FROM_Main):
         self.move(qtRectangle.topLeft())
         self.ui = FROM_Main()
         self.ui.setupUi(self)
-        self.ui.btnhome.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_6))
-        self.ui.btnrecog.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_7))
+        self.ui.btnhome.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.Home))
+        self.ui.btnuser.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.user))
+        self.ui.btnrecog.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.recog))
+        self.ui.btndatabes.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.Database))
 
     
     
