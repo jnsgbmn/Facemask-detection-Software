@@ -27,7 +27,7 @@
      <string notr="true">QFrame{
 	
 	
-	background-color: rgb(0, 46, 33);
+	background-color: rgb(11, 5, 4);
 	border-radius:50px;
 
 }</string>
@@ -48,9 +48,11 @@
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">QProgressBar{
+      <string notr="true">
+QProgressBar{
 	
-	background-color: rgb(22, 20, 7);
+	
+	background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border-color: beige;
     min-width: 10em;
@@ -91,7 +93,7 @@ QProgressBar::chunk{
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../Downloads/IMG_6041-removebg.png</pixmap>
+      <pixmap>../../Downloads/Untitled_Artwork 2.png</pixmap>
      </property>
     </widget>
     <widget class="QLabel" name="label_2">
@@ -107,7 +109,7 @@ QProgressBar::chunk{
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>images/IMG_6041-removebg.png</pixmap>
+      <pixmap>../../Downloads/Untitled_Artwork 2.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
