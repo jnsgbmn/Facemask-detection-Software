@@ -1,3 +1,4 @@
+from PyQt5 import QtGui, QtCore, Qt, uic
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
@@ -7,6 +8,7 @@ import sys
 import time
 
 from matplotlib import widgets
+from matplotlib.pyplot import connect
 
 
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
@@ -79,7 +81,6 @@ class detect_mask():
 
         maskNet = load_model("mask_detector.model")
         print("Starting the CAMERA...")
-        vs = VideoStream(src=1)
         
 
         while True:
@@ -129,6 +130,20 @@ class MainWindow(QMainWindow, FROM_Main):
         self.ui.btnuser.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.user))
         self.ui.btnrecog.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.recog))
         self.ui.btndatabes.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.Database))
+
+        self._timer = QtCore.QTimer(self)
+        self._timer.timeout.connect(self.play)
+        self.update()
+
+    def play(self):
+         try:
+            self.video.videosurvillance()
+            self.videoFrame.setPixmap(self.video.convertFrame())
+            self.videoFrame.setScaledContents(True)
+         except TypeError:
+            print ("No frame")
+
+   
 
     
     
