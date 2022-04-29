@@ -224,28 +224,6 @@
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QLabel" name="videoFrame_2">
-       <property name="geometry">
-        <rect>
-         <x>120</x>
-         <y>200</y>
-         <width>761</width>
-         <height>341</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">background-color: rgb(9, 13, 9);</string>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="pixmap">
-        <pixmap>images/Lifesavers - Virus 1.png</pixmap>
-       </property>
-       <property name="scaledContents">
-        <bool>true</bool>
-       </property>
-      </widget>
       <widget class="QFrame" name="frame_4">
        <property name="geometry">
         <rect>
@@ -450,6 +428,28 @@
         </property>
        </widget>
       </widget>
+      <widget class="QLabel" name="recognition_page_label">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>190</y>
+         <width>921</width>
+         <height>351</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </widget>
      <widget class="QWidget" name="user">
       <widget class="QLabel" name="label_6">
@@ -495,11 +495,11 @@
        <property name="text">
         <string/>
        </property>
-       <property name="pixmap">
-        <pixmap>images/Lifesavers - Virus 1.png</pixmap>
-       </property>
        <property name="scaledContents">
-        <bool>true</bool>
+        <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
       <widget class="QFrame" name="frame_5">
