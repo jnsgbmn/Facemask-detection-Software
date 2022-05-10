@@ -17,7 +17,7 @@ class video():
 
         faceNet.setInput(blob)
         detections = faceNet.forward()
-        print(detections.shape)
+
 
         faces = []
         locs = []
@@ -58,12 +58,12 @@ class video():
     maskNet = load_model("mask_detector.model")
 
 
-    print("Starting the CAMERA...")
     vs = VideoStream(src=0).start()
 
 
     while True:
         frame = vs.read()
+        frame = imutils.resize(frame)
 
         (locs, preds) = detect_and_predict_mask(frame, faceNet, maskNet)
 

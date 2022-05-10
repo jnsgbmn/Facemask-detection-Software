@@ -80,6 +80,9 @@ class MainWindow(QMainWindow, FROM_Main):
         self.value = 1
         self.ui.btncam.clicked.connect(self.onClicked)
 
+        self.logic2 = 0
+        self.value2 = 1
+        self.ui.btncam1.clicked.connect(self.onClicked2)
 
     @pyqtSlot()
     def onClicked(self):
@@ -90,13 +93,40 @@ class MainWindow(QMainWindow, FROM_Main):
             if ret == True:
                 self.displayImage(frame,1)
                 cv2.waitKey()
+                if self.logic == 2 :
+                    self.value = self.value +1
+                    cv2.imwrite()
+                    self.logic = 1
+
+    def displayImage(self,img,window=1):
+        qformat = QImage.Format_Indexed8
+        if len(img.shape) == 3:
+            if img.shape[2] == 4:
+                qformat =QImage.Format_RGBA888
+            else:
+                qformat = QImage.Format_RGB888
+        img = QImage(img, img.shape[1],img.shape[0],qformat)
+        img = img.rgbSwapped()
+        self.ui.videoFrame.setPixmap(QPixmap.fromImage(img))
+        self.ui.videoFrame.setAlignment(QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter)
+
+    @pyqtSlot()
+    def onClicked2(self):
+        cap = cv2.VideoCapture(0)
+        while cap.isOpened():
+            ret,frame = cap.read()
+            frame = cv2.flip(frame,1)
+            if ret == True:
+                self.displayImage2(frame,1)
+                cv2.waitKey()
                 if self.logic2 == 2 :
                     self.value2 = self.value2 +1
                     cv2.imwrite()
                     self.logic2 = 1
-        cap.release()
-        cv2.destroyAllWindows()
-    def displayImage(self,img,window=1):
+            else:
+                print("not found")
+
+    def displayImage2(self,img,window=1):
         qformat = QImage.Format_Indexed8
         if len(img.shape) == 3:
             if img.shape[2] == 4:
@@ -107,6 +137,8 @@ class MainWindow(QMainWindow, FROM_Main):
         img = img.rgbSwapped()
         self.ui.recognition_page_label.setPixmap(QPixmap.fromImage(img))
         self.ui.recognition_page_label.setAlignment(QtCore.Qt.AlignHCenter | QtCore.Qt.AlignVCenter)
+    
+
 
 class SplashScreen(QMainWindow, FROM_SPLASH):
     def __init__(self, parent = None):
