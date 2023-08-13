@@ -12,8 +12,5 @@
 -The tool that the developers used for the front-end of this project is Python Pytqt5. For the back-end, the developers imported keras tesorflow, CAFFEMODEL and protext to detect face and mask.
 -Caffemodel is a Architecture for Fast Feature Embedding) is a deep learning framework that allows users to create image classification and image segmentation models. Initially, users create and save their models as plain text PROTOTXT files.
 
-## METHODOLGY
-
--In this study, facemask recognition algorithms tried out to determine their accuracy in mask detection. In this study, face recognition algorithms namely Tensor flow algorithm , were explored and tried out to determine their accuracy in face detection. Coffee model is a simple but very powerful texture operator that labels the pixels of a image.
 
 
