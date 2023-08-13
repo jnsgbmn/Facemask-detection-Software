@@ -1,9 +1,10 @@
 # Covid – 19 Face Mask Recognition
 
 <p align=center>
+
   <img width="217" alt="2" src="https://github.com/jnsgbmn/Facemask-detection-Software/assets/102467227/b9e1d266-e539-4f22-b4c5-a70a833be7f0">
   <img width="217" alt="Picture2" src="https://github.com/jnsgbmn/Facemask-detection-Software/assets/102467227/f1409d66-c646-4213-8ed9-1ea72409deaf">
-
+  ![pic2](https://github.com/jnsgbmn/Facemask-detection-Software/assets/102467227/6521e530-b812-498a-ade1-e3a1af8948db)
 
 </p>
 
