@@ -1,4 +1,4 @@
-# Covid – 19 Face Mask Recognition
+# Face Mask Recognition
 
 <p align=center>
 
