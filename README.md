@@ -2,9 +2,8 @@
 
 <p align=center>
 
-  <img width="217" alt="2" src="https://github.com/jnsgbmn/Facemask-detection-Software/assets/102467227/b9e1d266-e539-4f22-b4c5-a70a833be7f0">
-  <img width="217" alt="Picture2" src="https://github.com/jnsgbmn/Facemask-detection-Software/assets/102467227/f1409d66-c646-4213-8ed9-1ea72409deaf">
- 
+<img width="1255" alt="Screen Shot 2022-04-29 at 11 44 10 PM" src="https://github.com/jnsgbmn/Facemask-detection-Software/assets/102467227/3d66c8cb-d509-4b29-ac1f-5260640a8f97">
+<img width="1267" alt="Screen Shot 2022-04-29 at 11 44 45 PM" src="https://github.com/jnsgbmn/Facemask-detection-Software/assets/102467227/6d260725-9a4c-4c47-880c-005ecdcb58a8">
 
 </p>
 
