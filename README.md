@@ -2,7 +2,8 @@
 
 <p align=center>
   <img width="217" alt="2" src="https://github.com/jnsgbmn/Facemask-detection-Software/assets/102467227/b9e1d266-e539-4f22-b4c5-a70a833be7f0">
-  ![image](https://github.com/jnsgbmn/Facemask-detection-Software/assets/102467227/fb0a1aed-4f20-4bc6-ace1-ebb4d8cc9a8f)
+  <img width="217" alt="Picture2" src="https://github.com/jnsgbmn/Facemask-detection-Software/assets/102467227/f1409d66-c646-4213-8ed9-1ea72409deaf">
+
 
 </p>
 
